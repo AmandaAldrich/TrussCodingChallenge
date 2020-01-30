@@ -76,27 +76,27 @@ warning to `stderr` and drop the row from your output.
 You can assume that the sample data we provide will contain all date
 and time format variants you will need to handle.
 
-## My Personal Notes
+## My Notes
 
 This project was super fun! I did not manage to meet all the requirements in the time alloted, but I have a runnable state and the TODOs in my code explain the missing work. It's been a while since I worked with Python, but I couldn't think of a better language for simple csv handling.
 
-I made a few assumptions:
+##### I made a few assumptions:
 * That Uppercase Names meant the whole string was uppercase, mostly because I am not familiar with capitalization standards in other cultures and didn't want to offend.
-* That adding a timezone indicator would be acceptable. I could just manipulated the values but I thought it would be more complete with DST if I added it as an obj
+* That adding a timezone indicator would be acceptable. I could just manipulated the values but I thought it would be more complete with DST if I added it as an object
 
-With more time:
-* better met the file in and file out requirements
+##### With more time:
+* I would have better met the file in and file out requirements
 * I would have finished up the UTF-8 formatting and removing rows that are not valid. (I have some of it written, but it doesn't quite do what I want)
 * I would have created more data to better test
-* Cleaned up my code for flow and readability
-* Looked into a neater solution for file reading/writing and UTF-8 handling. 
-* Dedicated more time to ask questions and do research before starting, however, I had to work around real-life commitments, and didn't want to send midnight emails.
+* I would have cleaned up my code for flow and readability
+* I would have looked into a neater solution for file reading/writing and UTF-8 handling. 
+* I would have dedicated more time to ask questions and do research before starting, however, I had to work around real-life commitments, and didn't want to send midnight emails.
 
-How To Run This Guy:
-This assumes you know how to run Python 3 specifically on your machine.
-This assumes you have already pulled the files on to your computer.
-Please install the pytz library before running this program, which can be done through command line. This user used 'sudo pip3 install pytz' and a restart, however your exact install may vary.
+##### How To Run This Guy:
+* This user assumes you know how to run Python 3 specifically on your machine.
+* This user also assumes you have already pulled the files on to your computer.
+* Please install the pytz library before running this program, which can be done through command line. This user used `sudo pip3 install pytz` and a restart, however your exact install may vary.
 * Navigate via command line to the file location
-* In the command line type 'truss_csv_normalization.py sample.csv output.csv' and 'truss_csv_normalization.py sample-with-broken-utf8.csv output1.csv' where output.csv and output1.csv can be changed to whatever you would like to name the file.
+* In the command line type `truss_csv_normalization.py sample.csv output.csv` and `truss_csv_normalization.py sample-with-broken-utf8.csv output1.csv` where `output.csv` and `output1.csv` can be changed to whatever you would like to name the file.
 
 This was tested on Mac 10.15 Catalina, and Windows 10 Home (which wasn't required but it ran, and I was excited, so...)
